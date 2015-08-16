@@ -14,8 +14,7 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_height="70dp"
         android:layout_alignParentTop="true"
         android:id="@+id/row_1">
 
@@ -24,7 +23,7 @@
             android:textSize="50dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_weight="3"
             android:layout_gravity="center"
             android:id="@+id/name"
             android:textColor="#ffd3c7bf" />
@@ -32,19 +31,21 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="20dp"
-            android:text="SCORE"
+            android:layout_weight="2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/score_button"
             android:id="@+id/scoreboard"/>
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="20dp"
-            android:text="BEST"
+            android:layout_weight="2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/score_button"
             android:id="@+id/bestboard"/>
 
     </LinearLayout>
@@ -52,8 +53,7 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_height="50dp"
         android:layout_below="@+id/row_1"
         android:id="@+id/row_2">
 
@@ -72,16 +72,15 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_below="@+id/row_2"
         android:id="@+id/board"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:background="#ff766d62">
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/bg_img">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -89,13 +88,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_below="@+id/row_2"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:id="@+id/row_3">
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:textSize="30dp"
+                android:background="@drawable/bg_button"
                 android:gravity="center_vertical|center_horizontal"
                 android:id="@+id/tile_11"/>
 
@@ -103,7 +107,10 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:textSize="30dp"
+                android:background="@drawable/bg_button"
                 android:gravity="center_vertical|center_horizontal"
                 android:id="@+id/tile_12"/>
 
@@ -111,7 +118,10 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:textSize="30dp"
+                android:background="@drawable/bg_button"
                 android:gravity="center_vertical|center_horizontal"
                 android:id="@+id/tile_13"/>
 
@@ -119,7 +129,10 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:textSize="30dp"
+                android:background="@drawable/bg_button"
                 android:textColor="#ffffff"
                 android:gravity="center_vertical|center_horizontal"
                 android:id="@+id/tile_14"/>
@@ -132,13 +145,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_below="@+id/row_3"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:id="@+id/row_4">
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:textSize="30dp"
+                android:background="@drawable/bg_button"
                 android:gravity="center_vertical|center_horizontal"
                 android:id="@+id/tile_21"/>
 
@@ -146,7 +164,10 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:textSize="30dp"
+                android:background="@drawable/bg_button"
                 android:gravity="center_vertical|center_horizontal"
                 android:id="@+id/tile_22" />
 
@@ -154,7 +175,10 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:textSize="30dp"
+                android:background="@drawable/bg_button"
                 android:gravity="center_vertical|center_horizontal"
                 android:id="@+id/tile_23"/>
 
@@ -162,8 +186,11 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:textSize="30dp"
                 android:textColor="#ffffff"
+                android:background="@drawable/bg_button"
                 android:gravity="center_vertical|center_horizontal"
                 android:id="@+id/tile_24"/>
 
@@ -175,13 +202,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_below="@+id/row_4"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:id="@+id/row_5">
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:textSize="30dp"
+                android:background="@drawable/bg_button"
                 android:gravity="center_vertical|center_horizontal"
                 android:id="@+id/tile_31"/>
 
@@ -189,7 +221,10 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:textSize="30dp"
+                android:background="@drawable/bg_button"
                 android:gravity="center_vertical|center_horizontal"
                 android:id="@+id/tile_32"/>
 
@@ -197,7 +232,10 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:textSize="30dp"
+                android:background="@drawable/bg_button"
                 android:gravity="center_vertical|center_horizontal"
                 android:id="@+id/tile_33"/>
 
@@ -205,8 +243,11 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:textSize="30dp"
                 android:textColor="#ffffff"
+                android:background="@drawable/bg_button"
                 android:gravity="center_vertical|center_horizontal"
                 android:id="@+id/tile_34"/>
 
@@ -218,13 +259,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_below="@+id/row_5"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:id="@+id/row_6">
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:textSize="30dp"
+                android:background="@drawable/bg_button"
                 android:gravity="center_vertical|center_horizontal"
                 android:id="@+id/tile_41"/>
 
@@ -232,7 +278,10 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:textSize="30dp"
+                android:background="@drawable/bg_button"
                 android:gravity="center_vertical|center_horizontal"
                 android:id="@+id/tile_42"/>
 
@@ -240,7 +289,10 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:textSize="30dp"
+                android:background="@drawable/bg_button"
                 android:gravity="center_vertical|center_horizontal"
                 android:id="@+id/tile_43"/>
 
@@ -248,14 +300,16 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:textSize="30dp"
                 android:textColor="#ffffff"
+                android:background="@drawable/bg_button"
                 android:gravity="center_vertical|center_horizontal"
                 android:id="@+id/tile_44"/>
 
         </LinearLayout>
 
     </LinearLayout>
-
 
 </LinearLayout>
