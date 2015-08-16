@@ -1,7 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="fill_parent"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
@@ -14,7 +14,7 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="100dp"
         android:layout_alignParentTop="true"
         android:id="@+id/row_1">
 
@@ -30,20 +30,22 @@
 
         <Button
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="50dp"
             android:layout_weight="2"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
+            android:layout_gravity="center"
             android:gravity="center_vertical|center_horizontal"
             android:background="@drawable/score_button"
             android:id="@+id/scoreboard"/>
 
         <Button
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="50dp"
             android:layout_weight="2"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
+            android:layout_gravity="center"
             android:gravity="center_vertical|center_horizontal"
             android:background="@drawable/score_button"
             android:id="@+id/bestboard"/>
@@ -53,7 +55,7 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="100dp"
         android:layout_below="@+id/row_1"
         android:id="@+id/row_2">
 
@@ -72,9 +74,10 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_below="@+id/row_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
         android:id="@+id/board"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
@@ -87,7 +90,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_below="@+id/row_2"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
             android:id="@+id/row_3">
@@ -98,7 +100,6 @@
                 android:layout_weight="1"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:textSize="30dp"
                 android:background="@drawable/bg_button"
                 android:gravity="center_vertical|center_horizontal"
                 android:id="@+id/tile_11"/>
